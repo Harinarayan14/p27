@@ -23,18 +23,20 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);  
-  Engine.update(engine); 
+  background(255,255,255);   
+  textSize(25);
+  text("Press any key to oscillate the pendulum.",200,500);
+  text("Press Enter to set the pendulum.",250,450);
   display1();
   display2();
   chain.display();
   drawSprites();
+   if (keyCode === ENTER){
+    bob.position.y = 50;
 }
-function keyPressed(){
-  if(keyCode===UP_ARROW){
-    engine.world.gravity.y+=1;
-  }
+Engine.update(engine);
 }
+
 
 
 
