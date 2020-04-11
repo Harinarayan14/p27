@@ -23,7 +23,8 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);   
+  background(0);   
+  fill("yellow");
   textSize(25);
   text("Press UP ARROW key to oscillate the pendulum.",200,500);
   text("Press Enter to set the pendulum.",250,450);
