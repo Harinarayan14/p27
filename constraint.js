@@ -4,7 +4,7 @@ class Chain{
         bodyA:bodyA,
         bodyB:bodyB,
         stiffness:3,
-        length:400
+        length:300
     };
     this.chain1 = Matter.Constraint.create(options);
     World.add(world,this.chain1);
