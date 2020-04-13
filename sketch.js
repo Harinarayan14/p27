@@ -26,12 +26,16 @@ function draw() {
   background(0);   
   fill("yellow");
   textSize(25);
-  text("Press UP ARROW key to oscillate the pendulum.",200,500);
+  text("Press space key and mouse to oscillate the pendulum.",200,500);
   text("Press Enter to set the pendulum.",250,450);
   display1();
   display2();
   chain.display();
   drawSprites();
+  if (keyCode === 32){
+    bob.position.y = mouseY;
+    bob.position.x = mouseX;
+}
    if (keyCode === ENTER){
     bob.position.y = 50;
 }
