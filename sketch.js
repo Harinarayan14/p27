@@ -11,7 +11,7 @@ function setup() {
   isStatic:true
   };
   var option2={
-    friction:0.01,
+    frictionAir:0.01,
     inertia : 1000000
     };
   
