@@ -12,7 +12,8 @@ function setup() {
   };
   var option2={
     frictionAir:0.01,
-    inertia : 1000000
+    density :1,
+    restitution:1
     };
   
   bob = Bodies.circle(200,50,30,option2);
